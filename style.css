@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'friends';
+    src: url('gabriel_weiss_friends/GABRWFFR.TTF') format('TrueType');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #b82921;
+    --cor1: #f9bc4a;
+    --cor2: #7f7ea3;
+    --cor3: #6e7855;
+    --cor4: #9a6943;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-mukta: 'Mukta', sans-serif;
+    --fonte-friends: 'friends', sans-serif;
+}
+
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    background-color: var(--cor2);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1366px;
+    min-width: 320px;
+    background-color: #6f6da3;
+    justify-content: space-between;
+}
+
+header > h1 {
+    font-family: var(--fonte-friends);
+    font-weight: lighter;
+    color: white;
+    margin: 7px;
+    height: 40px;
+    padding-top: 4px;
+    text-shadow: 1px 1px 1px black;
+}
+
+header > nav {
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    font-family: var(--fonte-mukta);
+    color: white;
+    height: 25px;
+    padding: 17px;
+    transition-duration: 0.8s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
+}
+
+header a:hover {
+    background-color: var(--cor2);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+div img {
+    max-width: 100%;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.445);
+}
+
+#sobre {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 950px;
+    min-width: 300px;
+    max-height: 700px;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.24);
+}
+
+#sobre h1 {
+    text-align: center;
+    font-family: var(--fonte-friends);
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.164);
+}
+
+#sobre p {
+    display: inline-block;
+    min-width: 100px;
+    max-width: 370px;
+    text-align: justify;
+    line-height: 25px;
+    padding: 30px 50px 10px 50px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.068);
+}
+
+#sobre img {
+    margin: auto;
+    margin-top: 23px; 
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.445);
+    min-width: 100px;
+}
+
+#personagens {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 950px;
+    min-width: 300px;
+    max-height: 5000px;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.24);
+}
+
+#personagens h1 {
+    text-align: center;
+    font-family: var(--fonte-friends);
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.164);
+}
+
+#personagens h2 {
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.164);
+    font-family: var(--fonte-mukta);
+    margin: auto;
+    width: 160px;
+}
+
+#personagens img {
+    margin: 20px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.288);
+}
+
+#chandler {
+    display: none;
+}
+
+
+#monica {
+    display: none;
+}
+
+#rachel {
+    display: none;
+}
+
+#phoebe {
+    display: none;
+}
+
+#joey {
+    display: none;
+}
+
+#ross {
+    display: none;
+}
+
+#c:hover + #chandler,
+#m:hover + #monica,
+#r:hover + #rachel,
+#p:hover + #phoebe,
+#j:hover + #joey,
+#rs:hover + #ross {
+    display: block;
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 15px;
+    min-width: 100px;
+    max-width: 700px;
+    max-height: 1000px;
+    margin: auto;
+    text-align: justify;
+    line-height: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.068);
+    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.568);
+}
+
+#m:hover + #monica {
+    background-color: var(--cor1);
+}
+
+#r:hover + #rachel {
+    background-color: var(--cor2);
+}
+
+#p:hover + #phoebe {
+    background-color: var(--cor3);
+}
+
+#j:hover + #joey {
+    background-color: var(--cor4);
+}
+
+#rs:hover + #ross {
+    background-color: var(--cor0);
+}
+
+#impacto {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 950px;
+    min-width: 300px;
+    max-height: 1500px;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.24);
+}
+
+#impacto h1 {
+    text-align: center;
+    font-family: var(--fonte-friends);
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.164);
+}
+
+#impacto p {
+    display: inline-block;
+    max-width: 900px;
+    min-width: 100px;
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.068);
+}
+
+footer {
+    margin: 100px 20px 10px 20px;
+    max-width: 1380px;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px 20px 20px 0px;
+    border-radius: 15px;
+    box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.24);
+}
+
+footer > p {
+    font: lighter 25px var(--fonte-friends);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+}
