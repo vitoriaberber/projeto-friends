@@ -1,2 +1,2 @@
-# projeto-friends
- Primeiro projeto com HTML e CSS
+# ProjetoFriends
+ Meu Primeiro projeto utilizando HTML e CSS!
